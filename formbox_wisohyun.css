@@ -1,0 +1,166 @@
+@charset "utf-8";
+/* 버튼스타일링 */
+* {
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+}
+#wrapper {
+  position: relative;
+  color: #777777;
+}
+.btn {
+  width: 100px;
+  height: 100px;
+  margin: 50px;
+  background: #3dc0ba;
+  border: 5px solid #009999;
+  border-radius: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+.btn .fa-edit {
+  margin: 15px 0 10px 5px;
+  font-size: 35px;
+  color: #fff;
+}
+.btn p {
+  background: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+}
+/* 폼박스 */
+.form-box {
+  display: none;
+  position: absolute;
+  top: 0;
+  margin: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  padding: 50px 0 0 0;
+  width: 1130px;
+  border: 3px solid #009999;
+  border-radius: 20px;
+  background: #fff;
+  z-index: 2;
+}
+.form-box h2 {
+  font-size: 32px;
+  text-align: center;
+}
+.form-box > p {
+  margin: 15px 0;
+  text-align: center;
+}
+.form-box .fa-times {
+  position: absolute;
+  top: 50px;
+  right: 25%;
+  font-size: 40px;
+  color: #525252;
+  cursor: pointer;
+}
+/* 레이아웃 */
+.form ul {
+  float: left;
+  width: 50%;
+  text-align: center;
+}
+.form ul li {
+  margin-bottom: 30px;
+  text-align: left;
+}
+.form ul li::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.form ul li p {
+  float: left;
+  width: 120px;
+  margin-left: 20px;
+  line-height: 50px;
+}
+.form ul li .select {
+  float: left;
+}
+/* select box 스타일링 */
+select,
+textarea,
+input {
+  width: 330px;
+  padding-left: 5px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  height: 50px;
+}
+textarea:focus,
+input:focus {
+  border: 2px solid #009999;
+}
+.form .select {
+  position: relative;
+  width: 330px;
+  height: 50px;
+  z-index: 1;
+}
+.form .select select {
+  width: 100%;
+}
+
+/* 화살표 */
+.form .select:before {
+  content: "\f107";
+  position: absolute;
+  top: 25%;
+  right: 15px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 25px;
+  color: #525252;
+}
+
+.brand .select,
+.phone .select,
+.brand input,
+.phone input {
+  width: 110px;
+  margin-right: 10px;
+}
+.phone input {
+  margin-right: 5px;
+}
+.form .inquiry {
+  text-align: center;
+}
+.form .inquiry input {
+  width: 20px;
+  height: 20px;
+}
+.form .inquiry span {
+  cursor: pointer;
+}
+.form .policy {
+  display: none;
+  width: 70%;
+  margin: 10px auto;
+  border: 2px solid #555;
+  background: #ccc;
+  padding: 30px;
+}
+.form input[value="견적문의"] {
+  display: block;
+  margin: 50px auto;
+  border: 3px solid #009999;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+.form input[value="견적문의"]:hover {
+  background: #3dc0ba;
+  color: #fff;
+}

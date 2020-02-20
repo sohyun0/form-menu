@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="reset_wisohyun.css" />
+    <link rel="stylesheet" href="formbox_wisohyun.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+    />
+    <script src="jquery-1.12.4.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div class="btn">
+        <i class="far fa-edit"></i>
+        <p>문의신청</p>
+      </div>
+      <div class="form-box">
+        <h2>견적문의</h2>
+        <p>빠르고 정확한 견적을 위해, 상세한 정보 입력이 필수 필요합니다.</p>
+        <i class="fas fa-times"></i>
+        <form class="form cf" action="#">
+          <ul>
+            <li class="brand ">
+              <p>브랜드</p>
+              <div class="select">
+                <label for="brand"></label>
+                <select name="made-select" id="brand">
+                  <option value="made">국산/수입</option>
+                  <option value="made1">1</option>
+                  <option value="made2">2</option>
+                  <option value="made3">3</option>
+                  <option value="made4">4</option>
+                </select>
+              </div>
+              <div class="select">
+                <label for="car"></label>
+                <select name="car-select" id="car">
+                  <option value="car">차 브랜드</option>
+                  <option value="car1">1</option>
+                  <option value="car2">2</option>
+                  <option value="car3">3</option>
+                  <option value="car4">4</option>
+                </select>
+              </div>
+              <label for="type" class="blind">차종류 입력</label>
+              <input type="text" id="type" placeholder="차종류 입력" required />
+            </li>
+            <li class="phone">
+              <p>연락처</p>
+              <div class="select">
+                <label for="phone"></label>
+                <select name="num-select" id="phone">
+                  <option value="num">010</option>
+                  <option value="num1">1</option>
+                  <option value="num2">2</option>
+                  <option value="num3">3</option>
+                  <option value="num4">4</option>
+                </select>
+              </div>
+              <label for="seNum" class="blind"></label>
+              <input type="tel" name="second" id="seNum" required />
+              <label for="laNum" class="blind"></label>
+              <input type="tel" name="last" id="laNum" required />
+            </li>
+            <li>
+              <p>이름 및 업체명</p>
+              <label for="name"></label>
+              <input type="text" name="last" id="name" required />
+            </li>
+            <li>
+              <p>E-mail</p>
+              <label for="eMail"></label>
+              <input type="email" id="eMail" required />
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <p>사업자 구분</p>
+              <div class="select">
+                <label for="ent"></label>
+                <select name="ent-select" id="ent">
+                  <option value="ent">사업자 구분을 선택하세요.</option>
+                  <option value="ent1">1</option>
+                  <option value="ent2">2</option>
+                  <option value="ent3">3</option>
+                  <option value="ent4">4</option>
+                </select>
+              </div>
+            </li>
+            <li>
+              <p>차량 구매 방법</p>
+              <div class="select">
+                <label for="buy"></label>
+                <select name="buy-select" id="buy">
+                  <option value="buy">차량 구매 방법을 선택하세요</option>
+                  <option value="buy1">1</option>
+                  <option value="buy2">2</option>
+                  <option value="buy3">3</option>
+                  <option value="buy4">4</option>
+                </select>
+              </div>
+            </li>
+            <li>
+              <p>지역</p>
+              <div class="select">
+                <label for="area"></label>
+                <select name="area-select" id="area">
+                  <option value="area">지역을 선택하세요.</option>
+                  <option value="area1">1</option>
+                  <option value="area2">2</option>
+                  <option value="area3">3</option>
+                  <option value="area4">4</option>
+                </select>
+              </div>
+            </li>
+            <li>
+              <p>기타문의</p>
+              <label for="memo"></label>
+              <textarea name="memotext" id="memo"></textarea>
+            </li>
+          </ul>
+          <div class="inquiry">
+            <input type="checkbox" id="checkBox" />
+            <label for="checkBox">
+              개인정보취급방침
+            </label>
+            <span>[전문보기]</span>
+          </div>
+          <p class="policy">
+            <!-- 개인정보 취급방침 전문은 로렘입숨을 이용했습니다 -->
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl
+            tincidunt eget nullam non. Quis hendrerit dolor magna eget est lorem
+            ipsum dolor sit. Volutpat odio facilisis mauris sit amet massa
+            Commodo odio aenean sed adipiscing diam donec adipiscing tristique.
+            Mi eget mauris pharetra et. Non tellus orci ac auctor augue. Elit at
+            imperdiet dui accumsan sit. Ornare arcu dui vivamus arcu felis.
+            Egestas integer eget aliquet nibh praesent.
+          </p>
+          <input type="submit" value="견적문의" />
+        </form>
+      </div>
+    </div>
+    <script src="formbox_wisohyun.js"></script>
+  </body>
+</html>
